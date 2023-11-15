@@ -1,0 +1,17 @@
+import random
+print(" Welcome to My first Project")
+wl = ["tashi","tsering","Dolma","Sonam"]
+#secert word and Guess word
+sword = random.choice(wl)
+display_word = []
+for letter in sword:
+    display_word += "_"
+print(display_word)     
+gword = input("Guess a letter").lower()
+print(gword)
+for position in range(len(sword)):
+    letter = sword[position]
+    if letter == gword:
+        display_word[position] = letter
+print(display_word)
+
